@@ -1,6 +1,6 @@
 const player1 = {
   name: 'Scorpion',
-  hp: '50',
+  hp: '100',
   img: 'http://reactmarathon-api.herokuapp.com/assets/scorpion.gif',
   weapon: ['pistol', 'knife'],
   attack: function () {
@@ -9,7 +9,7 @@ const player1 = {
 };
 const player2 = {
   name: 'Liu Kang',
-  hp: '80',
+  hp: '100',
   img: 'http://reactmarathon-api.herokuapp.com/assets/liukang.gif',
   weapon: ['pistol', 'knife'],
   attack: function () {
@@ -37,6 +37,7 @@ const createPlayer = (player, playerInfo) => {
   $name.innerText = playerInfo.name;
   $img.src = playerInfo.img;
   $life.innerText = playerInfo.hp;
+  $life.style.width = '100%';
 
   $player.appendChild($progressbar);
   $player.appendChild($character);
