@@ -18,7 +18,7 @@ const player2 = {
 };
 
 const createPlayer = (player, playerInfo) => {
-  const createEl = () => document.createElement('el');
+  const createEl = el => document.createElement(el);
   const addClass = (el, className) => {
     el.classList.add(className);
   };
